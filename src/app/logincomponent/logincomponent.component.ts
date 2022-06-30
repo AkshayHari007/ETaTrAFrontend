@@ -49,7 +49,7 @@ export class LogincomponentComponent implements OnInit {
         //alert(JSON.stringify(response));
         if (response) {
           localStorage.setItem("authData", JSON.stringify(response));
-          window.location.href = '/';
+          window.location.href = '/home';
         }
       })
     }

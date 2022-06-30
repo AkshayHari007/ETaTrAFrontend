@@ -31,8 +31,8 @@
 
           <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
             <div class="form-floating mb-3">
-              <input type="email" class="form-control"  [(ngModel)]="username" id="floatingInput" placeholder="name@example.com"
-                formControlName="email" [class.is-invalid]="f['email'].getError('required')!=null &&
+              <input type="email" class="form-control" [(ngModel)]="username" id="floatingInput"
+                placeholder="name@example.com" formControlName="email" [class.is-invalid]="f['email'].getError('required')!=null &&
                 f['email'].touched || f['email'].getError('pattern')!=null">
               <label for="floatingInput">Email address</label>
               <span class="text-danger"
@@ -43,14 +43,14 @@
 
 
             <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password"  [(ngModel)]="password"
-                formControlName="password" [class.is-invalid]="f['password'].getError('required')!=null &&
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
+                [(ngModel)]="password" formControlName="password" [class.is-invalid]="f['password'].getError('required')!=null &&
                 f['password'].touched || f['password'].getError('minlength')!=null">
               <label for="floatingPassword">Password</label>
               <span class="text-danger"
                 *ngIf="f['password'].getError('required')!=null && f['password'].touched">*Required</span>
               <span class="text-danger" *ngIf="f['password'].getError('minlength')!=null">*Password should minimum 8
-                characters </span>              
+                characters </span>
 
             </div>
 
@@ -61,11 +61,12 @@
               </label>
             </div>
             <div class="d-grid">
-              <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit" [disabled]="loginForm.invalid">Sign
+              <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit"
+                [disabled]="loginForm.invalid">Sign
                 In</button>
             </div>
 
-            <a id="dha" class="d-block text-center mt-2 small" routerLink="/signup">Don't have an account? Sign Up!</a>
+            <a id="dha" class="d-block text-center mt-2 small" routerLink="/">Don't have an account? Sign Up!</a>
             <!-- <hr class="my-4">
               <div class="d-grid mb-2">
                 <button class="btn btn-google btn-login text-uppercase fw-bold" type="submit">

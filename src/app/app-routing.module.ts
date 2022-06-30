@@ -18,7 +18,7 @@ import { UpdateprojectcomponentComponent } from './updateprojectcomponent/update
 
 const routes: Routes = [
 
-  { path: "login", component: LogincomponentComponent },
+  { path: "", component: LogincomponentComponent },
   { path: "signup", component: SignupcomponentComponent },
   { path: "tasks", component: TaskcomponentComponent },
   { path: "users", component: UsercomponentComponent },
@@ -30,7 +30,7 @@ const routes: Routes = [
   { path: "addproject", component: AddprojectcomponentComponent },
   { path: "update", component: UpdateprojectcomponentComponent },
   { path: "tasks", component: TaskcomponentComponent },
-  { path: "", component: HomecomponentComponent },
+  { path: "home", component: HomecomponentComponent },
 
 ];
 
